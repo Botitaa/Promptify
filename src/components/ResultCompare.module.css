@@ -1,0 +1,80 @@
+.wrapper { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 12px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+
+.col {
+  border: 0.5px solid var(--border-mid);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.colHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: var(--bg-elevated);
+  border-bottom: 0.5px solid var(--border);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.colBody {
+  padding: 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: var(--bg-surface);
+  min-height: 80px;
+}
+
+.copyBtn {
+  background: none;
+  border: none;
+  padding: 3px 8px;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  border-radius: 4px;
+  transition: all 0.15s;
+  font-family: var(--font-body);
+}
+
+.copyBtn:hover { background: var(--bg-hover); color: var(--text-primary); }
+
+.explanation {
+  border: 0.5px solid var(--border-mid);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.explanationHeader {
+  padding: 8px 12px;
+  background: var(--bg-elevated);
+  border-bottom: 0.5px solid var(--border);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.explanationBody {
+  padding: 12px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+}

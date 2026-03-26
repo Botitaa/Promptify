@@ -1,0 +1,114 @@
+.wrapper { display: flex; flex-direction: column; gap: 12px; }
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.count {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+}
+
+.clearBtn {
+  background: none;
+  border: 0.5px solid var(--border-mid);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s;
+}
+
+.clearBtn:hover { border-color: var(--danger); color: var(--danger); }
+
+.list { display: flex; flex-direction: column; gap: 8px; }
+
+.item {
+  padding: 10px 14px;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s;
+  background: var(--bg-surface);
+}
+
+.item:hover { border-color: var(--border-mid); background: var(--bg-elevated); }
+
+.itemMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.badgeGreen {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(29, 158, 117, 0.15);
+  color: var(--accent);
+}
+
+.badgeAmber {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(239, 159, 39, 0.15);
+  color: var(--amber);
+}
+
+.badgeGray {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: var(--bg-elevated);
+  color: var(--text-tertiary);
+}
+
+.time {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-tertiary);
+  margin-left: auto;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0 4px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.removeBtn:hover { color: var(--danger); }
+
+.preview {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.empty {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.emptyHint { font-size: 12px; color: var(--text-tertiary); opacity: 0.6; }
